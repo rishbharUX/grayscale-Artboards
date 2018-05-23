@@ -1,0 +1,40 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Grayscale All Artboards",
+      "identifier": "all-artboards",
+      "script": "./grayscaleAll.js",
+      "handler": "onRunAll"
+    },
+    {
+      "name": "Grayscale Selected Artboards",
+      "identifier": "selected-artboards",
+      "script": "./grayscaleSelected.js",
+      "handler": "onRunSelected"
+    },
+    {
+      "name": "Remove All Grayscale",
+      "identifier": "remove-all-grayscale",
+      "script": "./removeAllGrayscale.js",
+      "handler": "onRunRemoveAllGaryscale"
+    },
+    {
+      "name": "Remove Selected Grayscale",
+      "identifier": "remove-selected-grayscale",
+      "script": "./removeSelectedGrayscale.js",
+      "handler": "onRunRemoveSelectedGaryscale"
+    }
+  ],
+  "menu": {
+    "title": "Grayscale Artboards",
+    "items": [
+      "all-artboards",
+      "selected-artboards",
+      "remove-all-grayscale",
+      "remove-selected-grayscale"
+    ]
+  }
+}
